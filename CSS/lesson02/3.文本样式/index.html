@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--
+    height：指的是标签高度
+    text-align：排版,选择对齐方式，center(居中),left(靠左对齐),right(靠右对齐)
+    text-indent：首行缩进，1px是1个像素大小，1em是1个字符大小
+    line-height：调整行高，当行高等于标签高度字就可以上下了居中
+    text-decoration：字体修饰线，
+                     text-decoration: none——无修饰线
+                     text-decoration: underline——下划线
+                     text-decoration: line-through——中划线
+                     text-decoration: overline——上划线
+
+    -->
+    <style>
+        h1 {
+            color: #121381; /*rgb*/
+            text-align: center;
+        }
+
+        .p1 {
+            color: rgba(0, 255, 255, 0.5); /*rgba*/
+            text-indent: 2em;
+        }
+        .p3{
+            background: tomato;
+            height: 300px;/*这里高度是指标签高度，字体高度不变*/
+            line-height: 300px;/*这里调的就是行高，当行高等于标签高度字就可以上下了居中*/
+        }
+        .ha{
+            text-decoration: underline;/*下划线*/
+        }
+        .xi{
+            text-decoration: line-through;/*中划线*/
+        }
+        .lo{
+            text-decoration: overline;/*上划线*/
+        }
+    </style>
+
+</head>
+<body>
+<p class="ha">123123</p>
+<p class="xi">123123</p>
+<p class="lo">123123</p>
+
+<h1>剧情简介</h1>
+<p class="p1">息兰一族被人灭族，受到举族保护的息山神女被封印为一颗兰草种子飘入尘世，万年后重生成天界低阶仙女小兰花，无意间复活了被困于昊天塔的月尊东方青苍。</p>
+<p class="p2">因为小兰花无意间对其施加的同心咒，东方青苍不得不保护小兰花，在此过程中，早已断情绝爱的东方青苍却爱上了温顺可爱的小兰花 。</p>
+<p class="p3">
+    'We get old and get used to each other.We think alike.We read each others minds.We know what the other wants without
+    asking.
+    Sometimes we irritate each other a little bit.Maybe sometimes take each other for granted.
+    But once in awhile, like today, I meditate on it and realise how lucky I am to share my life with the greatest woman
+    I ever met.'
+</p>
+
+</body>
+</html>

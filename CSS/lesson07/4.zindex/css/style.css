@@ -1,0 +1,30 @@
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+li{
+    list-style: none;
+}
+#content{
+    width: 149px;
+    overflow: hidden;
+    font-size: 12px;
+    line-height: 25px;
+    border: 2px solid #000000;
+}
+/*父级元素相对定位*/
+#content ul{
+    position: relative;
+}
+.tipText, .tipBg{
+    width: 380px;
+    height: 25px;
+    position: absolute;
+    top: 108px;
+}
+.tipText{
+    z-index: 999;
+    color: white;
+}
+.tipBg{
+    background: #000000;
+    opacity: 0.5;
+    /*filter: alpha(opacity = 50);*/
+}

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <!--相对定位：
+        position: relative;
+        相对于自己原来位置进行偏移
+    -->
+    <style>
+        div{
+            padding: 5px;
+            margin: 10px;
+            font-size: 12px;
+            line-height: 25px;
+        }
+        #father{
+            border: 1px solid #f00;
+            padding: 0;
+        }
+        #first{
+            background: tomato;
+            border: 1px dashed #0f0;
+
+        }
+        #second{
+            background: pink;
+            border: 1px dashed #00f;
+            position: absolute;
+            top: 0;
+
+        }
+        #third{
+            background: skyblue;
+            border: 1px dashed #666;
+        }
+    </style>
+
+</head>
+<body>
+<div id="father">
+    <div id="first">第一个盒子</div>
+    <div id="second">第二个盒子</div>
+    <div id="third">第三个盒子</div>
+</div>
+</body>
+</html>

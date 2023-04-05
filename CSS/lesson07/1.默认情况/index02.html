@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        div{
+            padding: 0px;
+            margin: 0px;
+        }
+        #father{
+            width: 300px;
+            height: 300px;
+            border: 2px solid red;
+            padding: 5px;
+        }
+        #father:after{
+            content: "";
+            display: block;
+            clear: both;
+        }
+        #father div{
+            line-height: 100px;
+            text-align: center;
+        }
+        #father div a{
+            color: white;
+            text-decoration: none;
+        }
+        #a{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background: pink;
+
+        }
+        #a:hover{
+            background: skyblue;
+        }
+        #b{
+            width: 100px;
+            height: 100px;
+            float: right;
+            background: pink;
+        }
+        #b:hover{
+            background: skyblue;
+        }
+        #c{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background: pink;
+            position: relative;
+            top: 100px;
+        }
+        #c:hover{
+            background: skyblue;
+        }
+        #d{
+            width: 100px;
+            height: 100px;
+            float: left;
+            background: pink;
+            position: relative;
+            top: 100px;
+        }
+        #d:hover{
+            background: skyblue;
+        }
+        #e{
+            width: 100px;
+            height: 100px;
+            float: right;
+            background: pink;
+            position: relative;
+            top: 100px;
+        }
+        #e:hover{
+            background: skyblue;
+        }
+    </style>
+
+</head>
+<body>
+<div id="father">
+  <div id="a"><a href="#">a</a></div>
+  <div id="b"><a href="#">b</a></div>
+  <div id="c"><a href="#">c</a></div>
+  <div id="d"><a href="#">d</a></div>
+  <div id="e"><a href="#">e</a></div>
+</div>
+</body>
+</html>

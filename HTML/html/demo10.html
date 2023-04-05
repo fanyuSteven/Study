@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post" action="demo02.html"><!--method,规定如何发送表单数据get/post
+                                 action,表示向何处发送数据,可以是网站，也可以是请求处理地址
+                                 -->
+    <!--input
+        文本输入框: input type="text"
+        value="name"    默认初始值
+        maxlength="8"   最长能写几个字符
+        size="30"       文本框长度
+        required        输入不能为空
+        pattern         属性里填写正则表达式,规定输入内容格式
+
+
+
+    -->
+    <p>名字:
+        <input type="text" name="username" value="name" maxlength="8" size="30" placeholder="请输入用户名" pattern="[abc]"/>
+    </p>
+    <!--    密码框: <input type="password">    -->
+    <p>密码:<input type="password" name="pwd" value="passwd"/></p>
+    <!--单选框<input type="radio"/>
+        单选:一定要添加name属性，填入相同的值，相当于放入同一分组，只选一个
+        多选:不添加name属性，或则name属性填不同的值，但一般不用，有特殊的多选框
+    -->
+    <p>性别:
+        <input type="radio" value="boy" name="sex"/>男
+        <input type="radio" value="girl" name="sex"/>女
+    </p>
+    <!--多选框
+        同一组多选name属性填相同的值
+    -->
+    <p>爱好:
+        <input type="checkbox" value="sleep" name="hobby"/>睡觉
+        <input type="checkbox" value="Program" name="hobby" checked/>敲代码
+        <input type="checkbox" value="chat" name="hobby"/>聊天
+        <input type="checkbox" value="game" name="hobby"/>游戏
+    </p>
+    <!--按钮:
+        <input type="button"/>          普通按钮
+         <input type="image" src="">    图片按钮
+         <input type="submit"/>         提交按钮
+         <input type="reset"/>          重置按钮
+    -->
+    <p>按钮:
+        <input type="button" name="button" value="haha"/>
+    <!--图片
+        点击图片，可以跳转到form中action的页面
+    -->
+        <input type="image" src="../resources/image/1.jpg">
+        <input type="submit"/>
+        <input type="reset"/>
+    </p>
+    <!--文件域: <input type="file" name="file"> -->
+    <p>
+        <input type="file" name="file">
+        <input type="submit" value="上传" name="upload"><!--value,更改按钮上的文字-->
+    </p>
+    <!--邮箱:     <input type="email"-->
+    <p>email:
+        <input type="email" name="email">
+    </p>
+    <!--URL:    <input type="url"-->
+    <p>url:
+        <input type="url" name="url">
+    </p>
+    <!--数字:     <input type="number"
+    max:最大值
+    min:最小值
+    step:按一次加or减几
+    -->
+    <p>数字:
+        <input type="number" name="num" max="100" min="0" step="10">
+    </p>
+    <!--滑块:     <input type="range"
+    -->
+    <p>滑块:
+        <input type="range" name="range" max="100" min="0" step="2">
+    </p>
+    <!--搜索框:    -->
+    <p>搜索:
+        <input type="search" name="search">
+    </p>
+
+    <!--下拉框:
+        selected属性是默认选中
+        <select name="列表名称">
+            <option value="China">中国</option>
+         </select>
+    -->
+    <p>下拉框:
+        <select name="列表名称">
+            <option value="China">中国</option>
+            <option value="US">美国</option>
+            <option value="eth" selected>瑞士</option>
+            <option value="yindu">印度</option>
+            </select>
+    </p>
+
+    <!--文本域-->
+    <p>反馈:
+        <!--cols显示多少行
+         rows显示多少列
+          -->
+        <textarea name="textarea" cols="30" rows="10"></textarea>
+    </p>
+    <!--增强鼠标可用性
+        for属性:填写其他标签的ID，点击label的文字跳转到相应id的框。
+    -->
+    <p>
+        <label for="mark">点击跳转mark</label>
+        <input type="text" id="mark">
+    </p>
+</form>
+</body>
+</html>

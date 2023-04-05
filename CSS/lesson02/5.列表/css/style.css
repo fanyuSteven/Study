@@ -1,0 +1,36 @@
+#nav{
+    width: 300px;
+}
+.title{
+    font-size: 18px;
+    font-weight: bold;
+    text-indent: 1em;
+    line-height: 30px;
+    /*background: 颜色 图片 图片位置 平铺方式*/
+    background: red url("../images/1.jpg") 200px 10px no-repeat;
+}
+/*
+*list-style:
+*none 去掉列表前面的点
+*circle 空心圆
+*decimal 数字
+*square 正方形
+*/
+ul li{
+    height: 30px;
+    list-style: none;
+    text-indent: 1em;
+}
+ul li:hover{
+    background: gray;
+}
+a{
+    text-decoration: none;
+    color: #000000;
+    font-size: 14px;
+    line-height: 30px;
+}
+a:hover{
+    color: orange;
+    text-decoration: underline;
+}

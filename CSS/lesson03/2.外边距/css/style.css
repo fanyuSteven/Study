@@ -1,0 +1,29 @@
+/*很多标签默认有外边距和内边距,需要初始化*/
+body,ol,ul,h1,h2,h3,h4,h5,h6,p,th,td,dl,dd,form,fieldset,legend,input,textarea,select{margin:0;padding:0}
+
+/*开始写自己网页样式*/
+#web {
+    width: 300px;
+    /*border: 粗细 样式 颜色*/
+    border: 3px solid red;
+    margin: 0 auto;
+    /*
+    *margin: 1px 1px;集成只写两个值时，上下边距 左右边距
+    *margin: 1px 1px 1px 1px;集成写四个值时上 左 下 右 顺时针顺序
+    *margin-top: 1px; 上
+    *margin-bottom: 1px;下
+    *margin-left: 1px;左
+    *margin-right: 1px;右
+    */
+
+}
+h2{
+    background: pink;
+}
+
+form {
+    background: pink;
+}
+input{
+    border: 1px solid black;
+}

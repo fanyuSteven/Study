@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+
+    <style>
+        /*伪类选择器，用于避免使用过多的class和id选择器*/
+        /*
+        *①选中ul中第一个孩子
+        *ul li:first-child，指的是父元素ul中第一个li子元素
+        */
+        ul li:first-child{
+            background: red;
+        }
+
+        /*②选中ul中最后一个孩子*/
+        ul li:last-child{
+            background: orange;
+        }
+
+        /*选中p1*/
+        /*这里有两种写法
+        *第一种：body p:first-child
+        *这里主要介绍第二种：p:nth-child(1),括号中填几就是几。
+        *第二种方法，会先找到p的父元素，再去找p的父元素第n个元素，不一定是p元素
+        */
+        p:nth-child(1){
+            background: yellow;
+        }
+
+        /*
+        *更准确的应该是
+        *这个会先找到p的父元素，再去找p的父元素第n个p元素，这样只会指向p元素不会指向其他元素
+        */
+        p:nth-of-type(1){
+            background: green;
+        }
+
+    </style>
+
+</head>
+<body>
+
+<p>p1</p>
+<p>p2</p>
+<p>p3</p>
+<ul>
+    <li>li1</li>
+    <li>li2</li>
+    <li>li3</li>
+</ul>
+
+</body>
+</html>
